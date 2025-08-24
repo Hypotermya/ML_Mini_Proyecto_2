@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Librerias &#8212; Mini Proyecto 2</title>
+    <title>Implementacion del codigo &#8212; Mini Proyecto 2</title>
   
   
   
@@ -180,13 +180,7 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Introduccion.html">Introduccion</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Librerias</a></li>
-
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Implementacion del codigo</a></li>
 </ul>
 
     </div>
@@ -372,7 +366,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Librerias</h1>
+    <h1>Implementacion del codigo</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,38 +376,37 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Librerias</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cargado-de-datos">Cargado de datos</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones">Funciones</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-de-los-datos">Analisis exploratorio de los datos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-na-eda">Analisis de NA(EDA)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficas-variables-numericas-y-filtracion-de-outliers">Graficas variables numericas y filtracion de outliers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#librerias">Librerias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cargado-de-datos">Cargado de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones">Funciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-de-los-datos">Analisis exploratorio de los datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-na-eda">Analisis de NA(EDA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graficas-variables-numericas-y-filtracion-de-outliers">Graficas variables numericas y filtracion de outliers</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocesamiento">Preprocesamiento</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-outliers">Tratamiento de outliers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-de-los-datos">Split de los datos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion">Clasificacion</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regresion">Regresion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocesamiento">Preprocesamiento</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-outliers">Tratamiento de outliers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#split-de-los-datos">Split de los datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion">Clasificacion</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#regresion">Regresion</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes-na">Imputacion de datos faltantes(NA)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codificacion-de-categoricas">Codificacion de categoricas</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estandarizacion-de-variables-numericas">Estandarizacion de variables numericas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes-na">Imputacion de datos faltantes(NA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#codificacion-de-categoricas">Codificacion de categoricas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estandarizacion-de-variables-numericas">Estandarizacion de variables numericas</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-normales">Modelos normales</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-clasificacion">Modelo clasificacion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-ridge">Modelo Ridge</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-lasso">Modelo Lasso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-normales">Modelos normales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-clasificacion">Modelo clasificacion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-ridge">Modelo Ridge</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-lasso">Modelo Lasso</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#busqueda-de-hiperparametros-mediante-gridsearch">Busqueda de Hiperparametros mediante GridSearch</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#busqueda-de-hiperparametro-c">Busqueda de Hiperparametro C</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#busqueda-de-hiperparametros-mediante-gridsearch">Busqueda de Hiperparametros mediante GridSearch</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#busqueda-de-hiperparametro-c">Busqueda de Hiperparametro C</a></li>
 </ul>
 </li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -424,8 +417,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="librerias">
-<h1>Librerias<a class="headerlink" href="#librerias" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="implementacion-del-codigo">
+<h1>Implementacion del codigo<a class="headerlink" href="#implementacion-del-codigo" title="Link to this heading">#</a></h1>
+<section id="librerias">
+<h2>Librerias<a class="headerlink" href="#librerias" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -444,8 +439,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="cargado-de-datos">
-<h1>Cargado de datos<a class="headerlink" href="#cargado-de-datos" title="Link to this heading">#</a></h1>
+<section id="cargado-de-datos">
+<h2>Cargado de datos<a class="headerlink" href="#cargado-de-datos" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;vehicles.csv&quot;</span><span class="p">)</span>
@@ -628,8 +623,8 @@ document.write(`
 </div></div></div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="funciones">
-<h1>Funciones<a class="headerlink" href="#funciones" title="Link to this heading">#</a></h1>
+<section id="funciones">
+<h2>Funciones<a class="headerlink" href="#funciones" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">Summary</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">sheet</span><span class="p">):</span>
@@ -655,8 +650,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="analisis-exploratorio-de-los-datos">
-<h1>Analisis exploratorio de los datos<a class="headerlink" href="#analisis-exploratorio-de-los-datos" title="Link to this heading">#</a></h1>
+<section id="analisis-exploratorio-de-los-datos">
+<h2>Analisis exploratorio de los datos<a class="headerlink" href="#analisis-exploratorio-de-los-datos" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Summary</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="s1">&#39;df&#39;</span><span class="p">)</span>
@@ -1038,7 +1033,7 @@ memory usage: 84.7+ MB
 </div></div></div>
 </div>
 <section id="analisis-de-na-eda">
-<h2>Analisis de NA(EDA)<a class="headerlink" href="#analisis-de-na-eda" title="Link to this heading">#</a></h2>
+<h3>Analisis de NA(EDA)<a class="headerlink" href="#analisis-de-na-eda" title="Link to this heading">#</a></h3>
 <p>Revisamos los porcentajes de NA para luego realizar su tratamiento en el preprocesamiento de los datos</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1088,7 +1083,7 @@ posting_date      0.015930
 </div>
 </section>
 <section id="graficas-variables-numericas-y-filtracion-de-outliers">
-<h2>Graficas variables numericas y filtracion de outliers<a class="headerlink" href="#graficas-variables-numericas-y-filtracion-de-outliers" title="Link to this heading">#</a></h2>
+<h3>Graficas variables numericas y filtracion de outliers<a class="headerlink" href="#graficas-variables-numericas-y-filtracion-de-outliers" title="Link to this heading">#</a></h3>
 <p>Realizamos las graficas de las variables numericas</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1499,8 +1494,8 @@ Name: count, dtype: int64
 <p>Se pueden observar que las correlaciones de las variables numericas es bastante baja. Lo cual es raro para las variables que deberian estar relacionadas. se realizara la matriz de correlacion despues del preprocesamiento.</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="preprocesamiento">
-<h1>Preprocesamiento<a class="headerlink" href="#preprocesamiento" title="Link to this heading">#</a></h1>
+<section id="preprocesamiento">
+<h2>Preprocesamiento<a class="headerlink" href="#preprocesamiento" title="Link to this heading">#</a></h2>
 <p>En primer lugar se eliminan las variables que no son predictorias o importantes para el modelo</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1517,7 +1512,7 @@ Name: count, dtype: int64
 </div>
 </div>
 <section id="tratamiento-de-outliers">
-<h2>Tratamiento de outliers<a class="headerlink" href="#tratamiento-de-outliers" title="Link to this heading">#</a></h2>
+<h3>Tratamiento de outliers<a class="headerlink" href="#tratamiento-de-outliers" title="Link to this heading">#</a></h3>
 <p>Ahora se trataran los outliers de la variable price y la variable odometer.
 El tratamiento de price es clave para poder crear la variable HighDemand</p>
 <p>Primero se revisan cuantos valores de 0 hay en las 2 variables</p>
@@ -1673,9 +1668,9 @@ Umbral final odometer: 100 - 351147.4899999976
 <p>Gracias a esto ya se puede realizar el split de los datos para crear la variable objetivo de clasificacion</p>
 </section>
 <section id="split-de-los-datos">
-<h2>Split de los datos<a class="headerlink" href="#split-de-los-datos" title="Link to this heading">#</a></h2>
+<h3>Split de los datos<a class="headerlink" href="#split-de-los-datos" title="Link to this heading">#</a></h3>
 <section id="clasificacion">
-<h3>Clasificacion<a class="headerlink" href="#clasificacion" title="Link to this heading">#</a></h3>
+<h4>Clasificacion<a class="headerlink" href="#clasificacion" title="Link to this heading">#</a></h4>
 <p>Creamos la variable objetivo HighDemand</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1708,7 +1703,7 @@ Umbral final odometer: 100 - 351147.4899999976
 </div>
 </section>
 <section id="regresion">
-<h3>Regresion<a class="headerlink" href="#regresion" title="Link to this heading">#</a></h3>
+<h4>Regresion<a class="headerlink" href="#regresion" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_reg</span><span class="o">=</span><span class="n">df_clean</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -1734,7 +1729,7 @@ Umbral final odometer: 100 - 351147.4899999976
 </section>
 </section>
 <section id="imputacion-de-datos-faltantes-na">
-<h2>Imputacion de datos faltantes(NA)<a class="headerlink" href="#imputacion-de-datos-faltantes-na" title="Link to this heading">#</a></h2>
+<h3>Imputacion de datos faltantes(NA)<a class="headerlink" href="#imputacion-de-datos-faltantes-na" title="Link to this heading">#</a></h3>
 <p>Se realiza la imputacion de datos faltantes antes de realizar OneHot y escalamiento</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1860,7 +1855,7 @@ Umbral final odometer: 100 - 351147.4899999976
 </div>
 </section>
 <section id="codificacion-de-categoricas">
-<h2>Codificacion de categoricas<a class="headerlink" href="#codificacion-de-categoricas" title="Link to this heading">#</a></h2>
+<h3>Codificacion de categoricas<a class="headerlink" href="#codificacion-de-categoricas" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">encoder_clas</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">handle_unknown</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span><span class="n">sparse_output</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1910,7 +1905,7 @@ Umbral final odometer: 100 - 351147.4899999976
 </div>
 </section>
 <section id="estandarizacion-de-variables-numericas">
-<h2>Estandarizacion de variables numericas<a class="headerlink" href="#estandarizacion-de-variables-numericas" title="Link to this heading">#</a></h2>
+<h3>Estandarizacion de variables numericas<a class="headerlink" href="#estandarizacion-de-variables-numericas" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scaler_clas</span><span class="o">=</span><span class="n">StandardScaler</span><span class="p">()</span>
@@ -1980,10 +1975,10 @@ Umbral final odometer: 100 - 351147.4899999976
 </div>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="modelos-normales">
-<h1>Modelos normales<a class="headerlink" href="#modelos-normales" title="Link to this heading">#</a></h1>
+<section id="modelos-normales">
+<h2>Modelos normales<a class="headerlink" href="#modelos-normales" title="Link to this heading">#</a></h2>
 <section id="modelo-clasificacion">
-<h2>Modelo clasificacion<a class="headerlink" href="#modelo-clasificacion" title="Link to this heading">#</a></h2>
+<h3>Modelo clasificacion<a class="headerlink" href="#modelo-clasificacion" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_clas_final</span><span class="o">=</span><span class="n">X_train_clas_final</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;float32&quot;</span><span class="p">)</span>
@@ -2030,13 +2025,13 @@ Umbral final odometer: 100 - 351147.4899999976
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.8614895729890765
-Precision: 0.861532379223659
-Recall: 0.8614895729890765
-F1-score: 0.8614854609904362
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.8614763323402846
+Precision: 0.8615189288895032
+Recall: 0.8614763323402846
+F1-score: 0.8614722399122225
 
 Matriz de confusión:
-[[32738  5025]
+[[32737  5026]
  [ 5436 32326]]
 
 Reporte de clasificación:
@@ -2070,7 +2065,7 @@ Test set score: 0.861
 <p>Esto se utilizara de comparacion mas adelante cuando se ejecute el Gridsearch</p>
 </section>
 <section id="modelo-ridge">
-<h2>Modelo Ridge<a class="headerlink" href="#modelo-ridge" title="Link to this heading">#</a></h2>
+<h3>Modelo Ridge<a class="headerlink" href="#modelo-ridge" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_reg_final</span><span class="o">=</span><span class="n">X_train_reg_final</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;float32&quot;</span><span class="p">)</span>
@@ -2088,7 +2083,8 @@ Test set score: 0.861
 <div class="cell_output docutils container">
 <div class="output text_html"><style>#sk-container-id-2 {
   /* Definition of color scheme common for light and dark mode */
-  --sklearn-color-text: black;
+  --sklearn-color-text: #000;
+  --sklearn-color-text-muted: #666;
   --sklearn-color-line: gray;
   /* Definition of color scheme for unfitted estimators */
   --sklearn-color-unfitted-level-0: #fff5e6;
@@ -2233,12 +2229,21 @@ clickable and can be expanded/collapsed.
 /* Toggleable label */
 #sk-container-id-2 label.sk-toggleable__label {
   cursor: pointer;
-  display: block;
+  display: flex;
   width: 100%;
   margin-bottom: 0;
   padding: 0.5em;
   box-sizing: border-box;
   text-align: center;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+#sk-container-id-2 label.sk-toggleable__label .caption {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  color: var(--sklearn-color-text-muted);
 }
 
 #sk-container-id-2 label.sk-toggleable__label-arrow:before {
@@ -2391,7 +2396,8 @@ a:visited.sk-estimator-doc-link {
   height: 1em;
   width: 1em;
   text-decoration: none !important;
-  margin-left: 1ex;
+  margin-left: 0.5em;
+  text-align: center;
   /* unfitted */
   border: var(--sklearn-color-unfitted-level-1) 1pt solid;
   color: var(--sklearn-color-unfitted-level-1);
@@ -2490,7 +2496,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-3);
 }
-</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Ridge(max_iter=1000, random_state=0)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;Ridge<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.4/modules/generated/sklearn.linear_model.Ridge.html">?<span>Documentation for Ridge</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>Ridge(max_iter=1000, random_state=0)</pre></div> </div></div></div></div></div></div>
+</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Ridge(max_iter=1000, random_state=0)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>Ridge</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.linear_model.Ridge.html">?<span>Documentation for Ridge</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>Ridge(max_iter=1000, random_state=0)</pre></div> </div></div></div></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2508,7 +2514,7 @@ Test set score: 0.623
 </div>
 </section>
 <section id="modelo-lasso">
-<h2>Modelo Lasso<a class="headerlink" href="#modelo-lasso" title="Link to this heading">#</a></h2>
+<h3>Modelo Lasso<a class="headerlink" href="#modelo-lasso" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lasso</span><span class="o">=</span><span class="n">Lasso</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
@@ -2519,7 +2525,8 @@ Test set score: 0.623
 <div class="cell_output docutils container">
 <div class="output text_html"><style>#sk-container-id-3 {
   /* Definition of color scheme common for light and dark mode */
-  --sklearn-color-text: black;
+  --sklearn-color-text: #000;
+  --sklearn-color-text-muted: #666;
   --sklearn-color-line: gray;
   /* Definition of color scheme for unfitted estimators */
   --sklearn-color-unfitted-level-0: #fff5e6;
@@ -2664,12 +2671,21 @@ clickable and can be expanded/collapsed.
 /* Toggleable label */
 #sk-container-id-3 label.sk-toggleable__label {
   cursor: pointer;
-  display: block;
+  display: flex;
   width: 100%;
   margin-bottom: 0;
   padding: 0.5em;
   box-sizing: border-box;
   text-align: center;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+#sk-container-id-3 label.sk-toggleable__label .caption {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  color: var(--sklearn-color-text-muted);
 }
 
 #sk-container-id-3 label.sk-toggleable__label-arrow:before {
@@ -2822,7 +2838,8 @@ a:visited.sk-estimator-doc-link {
   height: 1em;
   width: 1em;
   text-decoration: none !important;
-  margin-left: 1ex;
+  margin-left: 0.5em;
+  text-align: center;
   /* unfitted */
   border: var(--sklearn-color-unfitted-level-1) 1pt solid;
   color: var(--sklearn-color-unfitted-level-1);
@@ -2921,7 +2938,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-3);
 }
-</style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Lasso(random_state=0)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" checked><label for="sk-estimator-id-3" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;Lasso<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.4/modules/generated/sklearn.linear_model.Lasso.html">?<span>Documentation for Lasso</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>Lasso(random_state=0)</pre></div> </div></div></div></div></div></div>
+</style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Lasso(random_state=0)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" checked><label for="sk-estimator-id-3" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>Lasso</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.linear_model.Lasso.html">?<span>Documentation for Lasso</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>Lasso(random_state=0)</pre></div> </div></div></div></div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2939,12 +2956,13 @@ Test set score: 0.623
 </div>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="busqueda-de-hiperparametros-mediante-gridsearch">
-<h1>Busqueda de Hiperparametros mediante GridSearch<a class="headerlink" href="#busqueda-de-hiperparametros-mediante-gridsearch" title="Link to this heading">#</a></h1>
+<section id="busqueda-de-hiperparametros-mediante-gridsearch">
+<h2>Busqueda de Hiperparametros mediante GridSearch<a class="headerlink" href="#busqueda-de-hiperparametros-mediante-gridsearch" title="Link to this heading">#</a></h2>
 <section id="busqueda-de-hiperparametro-c">
-<h2>Busqueda de Hiperparametro C<a class="headerlink" href="#busqueda-de-hiperparametro-c" title="Link to this heading">#</a></h2>
+<h3>Busqueda de Hiperparametro C<a class="headerlink" href="#busqueda-de-hiperparametro-c" title="Link to this heading">#</a></h3>
 <p>Se realiza la busqueda mediante GridSearch del hiperparametro C para el modelo de regresion Logistica</p>
 <p>Verificamos primero con distintos valores de C para acotar el rango que vamos a usar en gridsearch</p>
+</section>
 </section>
 </section>
 
@@ -3003,38 +3021,37 @@ Test set score: 0.623
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Librerias</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cargado-de-datos">Cargado de datos</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones">Funciones</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-de-los-datos">Analisis exploratorio de los datos</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-na-eda">Analisis de NA(EDA)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficas-variables-numericas-y-filtracion-de-outliers">Graficas variables numericas y filtracion de outliers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#librerias">Librerias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cargado-de-datos">Cargado de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones">Funciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-de-los-datos">Analisis exploratorio de los datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-na-eda">Analisis de NA(EDA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graficas-variables-numericas-y-filtracion-de-outliers">Graficas variables numericas y filtracion de outliers</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocesamiento">Preprocesamiento</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-outliers">Tratamiento de outliers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-de-los-datos">Split de los datos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion">Clasificacion</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regresion">Regresion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocesamiento">Preprocesamiento</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-outliers">Tratamiento de outliers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#split-de-los-datos">Split de los datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion">Clasificacion</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#regresion">Regresion</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes-na">Imputacion de datos faltantes(NA)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codificacion-de-categoricas">Codificacion de categoricas</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estandarizacion-de-variables-numericas">Estandarizacion de variables numericas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes-na">Imputacion de datos faltantes(NA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#codificacion-de-categoricas">Codificacion de categoricas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estandarizacion-de-variables-numericas">Estandarizacion de variables numericas</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-normales">Modelos normales</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-clasificacion">Modelo clasificacion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-ridge">Modelo Ridge</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-lasso">Modelo Lasso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-normales">Modelos normales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-clasificacion">Modelo clasificacion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-ridge">Modelo Ridge</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-lasso">Modelo Lasso</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#busqueda-de-hiperparametros-mediante-gridsearch">Busqueda de Hiperparametros mediante GridSearch</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#busqueda-de-hiperparametro-c">Busqueda de Hiperparametro C</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#busqueda-de-hiperparametros-mediante-gridsearch">Busqueda de Hiperparametros mediante GridSearch</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#busqueda-de-hiperparametro-c">Busqueda de Hiperparametro C</a></li>
 </ul>
 </li>
 </ul>
-
   </nav></div>
 
 </div></div>
