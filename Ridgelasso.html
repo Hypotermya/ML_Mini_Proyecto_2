@@ -1,0 +1,2049 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Librerias &#8212; Mini Proyecto 2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Ridgelasso';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Introduccion" href="Introduccion.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="Presentacion.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logoUN.png" class="logo__image only-light" alt="Mini Proyecto 2 - Home"/>
+    <script>document.write(`<img src="_static/logoUN.png" class="logo__image only-dark" alt="Mini Proyecto 2 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Presentacion.html">
+                    Presentacion
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introduccion.html">Introduccion</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Librerias</a></li>
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FRidgelasso.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Ridgelasso.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Librerias</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Librerias</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cargado-de-datos">Cargado de datos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones">Funciones</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-de-los-datos">Analisis exploratorio de los datos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-na-eda">Analisis de NA(EDA)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficas-variables-numericas-y-filtracion-de-outliers">Graficas variables numericas y filtracion de outliers</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocesamiento">Preprocesamiento</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-outliers">Tratamiento de outliers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-de-los-datos">Split de los datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion">Clasificacion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regresion">Regresion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes-na">Imputacion de datos faltantes(NA)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codificacion-de-categoricas">Codificacion de categoricas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estandarizacion-de-variables-numericas">Estandarizacion de variables numericas</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="librerias">
+<h1>Librerias<a class="headerlink" href="#librerias" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">Ridge</span><span class="p">,</span> <span class="n">Lasso</span><span class="p">,</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.impute</span><span class="w"> </span><span class="kn">import</span> <span class="n">SimpleImputer</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span><span class="p">,</span> <span class="n">OneHotEncoder</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">GridSearchCV</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.sparse</span><span class="w"> </span><span class="kn">import</span> <span class="n">hstack</span><span class="p">,</span><span class="n">csr_matrix</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cargado-de-datos">
+<h1>Cargado de datos<a class="headerlink" href="#cargado-de-datos" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;vehicles.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>url</th>
+      <th>region</th>
+      <th>region_url</th>
+      <th>price</th>
+      <th>year</th>
+      <th>manufacturer</th>
+      <th>model</th>
+      <th>condition</th>
+      <th>cylinders</th>
+      <th>...</th>
+      <th>size</th>
+      <th>type</th>
+      <th>paint_color</th>
+      <th>image_url</th>
+      <th>description</th>
+      <th>county</th>
+      <th>state</th>
+      <th>lat</th>
+      <th>long</th>
+      <th>posting_date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>7222695916</td>
+      <td>https://prescott.craigslist.org/cto/d/prescott...</td>
+      <td>prescott</td>
+      <td>https://prescott.craigslist.org</td>
+      <td>6000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>az</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>7218891961</td>
+      <td>https://fayar.craigslist.org/ctd/d/bentonville...</td>
+      <td>fayetteville</td>
+      <td>https://fayar.craigslist.org</td>
+      <td>11900</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ar</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>7221797935</td>
+      <td>https://keys.craigslist.org/cto/d/summerland-k...</td>
+      <td>florida keys</td>
+      <td>https://keys.craigslist.org</td>
+      <td>21000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>fl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7222270760</td>
+      <td>https://worcester.craigslist.org/cto/d/west-br...</td>
+      <td>worcester / central MA</td>
+      <td>https://worcester.craigslist.org</td>
+      <td>1500</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ma</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>7210384030</td>
+      <td>https://greensboro.craigslist.org/cto/d/trinit...</td>
+      <td>greensboro</td>
+      <td>https://greensboro.craigslist.org</td>
+      <td>4900</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>nc</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 26 columns</p>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="funciones">
+<h1>Funciones<a class="headerlink" href="#funciones" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">Summary</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">sheet</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hoja: </span><span class="si">{</span><span class="n">sheet</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Crear la tabla de resumen</span>
+    <span class="n">resumen</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;Cantidad de filas&quot;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+        <span class="s2">&quot;Cantidad de columnas&quot;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+        <span class="s2">&quot;Datos faltantes&quot;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span>
+        <span class="s2">&quot;Filas duplicadas&quot;</span><span class="p">:</span> <span class="n">data</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="c1"># Convertir el resumen en un DataFrame</span>
+    <span class="n">ResumenHoja</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">resumen</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Resumen&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Resumen:&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">ResumenHoja</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Encabezado:&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="analisis-exploratorio-de-los-datos">
+<h1>Analisis exploratorio de los datos<a class="headerlink" href="#analisis-exploratorio-de-los-datos" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Summary</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="s1">&#39;df&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hoja: df
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resumen:
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Cantidad de filas</th>
+      <th>Cantidad de columnas</th>
+      <th>Datos faltantes</th>
+      <th>Filas duplicadas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Resumen</th>
+      <td>426880</td>
+      <td>26</td>
+      <td>1655336</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Encabezado:
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>url</th>
+      <th>region</th>
+      <th>region_url</th>
+      <th>price</th>
+      <th>year</th>
+      <th>manufacturer</th>
+      <th>model</th>
+      <th>condition</th>
+      <th>cylinders</th>
+      <th>...</th>
+      <th>size</th>
+      <th>type</th>
+      <th>paint_color</th>
+      <th>image_url</th>
+      <th>description</th>
+      <th>county</th>
+      <th>state</th>
+      <th>lat</th>
+      <th>long</th>
+      <th>posting_date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>7222695916</td>
+      <td>https://prescott.craigslist.org/cto/d/prescott...</td>
+      <td>prescott</td>
+      <td>https://prescott.craigslist.org</td>
+      <td>6000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>az</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>7218891961</td>
+      <td>https://fayar.craigslist.org/ctd/d/bentonville...</td>
+      <td>fayetteville</td>
+      <td>https://fayar.craigslist.org</td>
+      <td>11900</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ar</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>7221797935</td>
+      <td>https://keys.craigslist.org/cto/d/summerland-k...</td>
+      <td>florida keys</td>
+      <td>https://keys.craigslist.org</td>
+      <td>21000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>fl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7222270760</td>
+      <td>https://worcester.craigslist.org/cto/d/west-br...</td>
+      <td>worcester / central MA</td>
+      <td>https://worcester.craigslist.org</td>
+      <td>1500</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ma</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>7210384030</td>
+      <td>https://greensboro.craigslist.org/cto/d/trinit...</td>
+      <td>greensboro</td>
+      <td>https://greensboro.craigslist.org</td>
+      <td>4900</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>nc</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 26 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 426880 entries, 0 to 426879
+Data columns (total 26 columns):
+ #   Column        Non-Null Count   Dtype  
+---  ------        --------------   -----  
+ 0   id            426880 non-null  int64  
+ 1   url           426880 non-null  object 
+ 2   region        426880 non-null  object 
+ 3   region_url    426880 non-null  object 
+ 4   price         426880 non-null  int64  
+ 5   year          425675 non-null  float64
+ 6   manufacturer  409234 non-null  object 
+ 7   model         421603 non-null  object 
+ 8   condition     252776 non-null  object 
+ 9   cylinders     249202 non-null  object 
+ 10  fuel          423867 non-null  object 
+ 11  odometer      422480 non-null  float64
+ 12  title_status  418638 non-null  object 
+ 13  transmission  424324 non-null  object 
+ 14  VIN           265838 non-null  object 
+ 15  drive         296313 non-null  object 
+ 16  size          120519 non-null  object 
+ 17  type          334022 non-null  object 
+ 18  paint_color   296677 non-null  object 
+ 19  image_url     426812 non-null  object 
+ 20  description   426810 non-null  object 
+ 21  county        0 non-null       float64
+ 22  state         426880 non-null  object 
+ 23  lat           420331 non-null  float64
+ 24  long          420331 non-null  float64
+ 25  posting_date  426812 non-null  object 
+dtypes: float64(5), int64(2), object(19)
+memory usage: 84.7+ MB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>price</th>
+      <th>year</th>
+      <th>odometer</th>
+      <th>county</th>
+      <th>lat</th>
+      <th>long</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>4.268800e+05</td>
+      <td>4.268800e+05</td>
+      <td>425675.000000</td>
+      <td>4.224800e+05</td>
+      <td>0.0</td>
+      <td>420331.000000</td>
+      <td>420331.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>7.311487e+09</td>
+      <td>7.519903e+04</td>
+      <td>2011.235191</td>
+      <td>9.804333e+04</td>
+      <td>NaN</td>
+      <td>38.493940</td>
+      <td>-94.748599</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>4.473170e+06</td>
+      <td>1.218228e+07</td>
+      <td>9.452120</td>
+      <td>2.138815e+05</td>
+      <td>NaN</td>
+      <td>5.841533</td>
+      <td>18.365462</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>7.207408e+09</td>
+      <td>0.000000e+00</td>
+      <td>1900.000000</td>
+      <td>0.000000e+00</td>
+      <td>NaN</td>
+      <td>-84.122245</td>
+      <td>-159.827728</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>7.308143e+09</td>
+      <td>5.900000e+03</td>
+      <td>2008.000000</td>
+      <td>3.770400e+04</td>
+      <td>NaN</td>
+      <td>34.601900</td>
+      <td>-111.939847</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>7.312621e+09</td>
+      <td>1.395000e+04</td>
+      <td>2013.000000</td>
+      <td>8.554800e+04</td>
+      <td>NaN</td>
+      <td>39.150100</td>
+      <td>-88.432600</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>7.315254e+09</td>
+      <td>2.648575e+04</td>
+      <td>2017.000000</td>
+      <td>1.335425e+05</td>
+      <td>NaN</td>
+      <td>42.398900</td>
+      <td>-80.832039</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>7.317101e+09</td>
+      <td>3.736929e+09</td>
+      <td>2022.000000</td>
+      <td>1.000000e+07</td>
+      <td>NaN</td>
+      <td>82.390818</td>
+      <td>173.885502</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<section id="analisis-de-na-eda">
+<h2>Analisis de NA(EDA)<a class="headerlink" href="#analisis-de-na-eda" title="Link to this heading">#</a></h2>
+<p>Revisamos los porcentajes de NA para luego realizar su tratamiento en el preprocesamiento de los datos</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">NA_porcentaje</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">NA_porcentaje</span><span class="o">.</span><span class="n">to_string</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>id                0.000000
+url               0.000000
+region            0.000000
+region_url        0.000000
+price             0.000000
+year              0.282281
+manufacturer      4.133714
+model             1.236179
+condition        40.785232
+cylinders        41.622470
+fuel              0.705819
+odometer          1.030735
+title_status      1.930753
+transmission      0.598763
+VIN              37.725356
+drive            30.586347
+size             71.767476
+type             21.752717
+paint_color      30.501078
+image_url         0.015930
+description       0.016398
+county          100.000000
+state             0.000000
+lat               1.534155
+long              1.534155
+posting_date      0.015930
+</pre></div>
+</div>
+</div>
+</div>
+<p>Eliminamos la variable county debido a que tiene el 100% de NA</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">&quot;county&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="graficas-variables-numericas-y-filtracion-de-outliers">
+<h2>Graficas variables numericas y filtracion de outliers<a class="headerlink" href="#graficas-variables-numericas-y-filtracion-de-outliers" title="Link to this heading">#</a></h2>
+<p>Realizamos las graficas de las variables numericas</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">num</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Distribuciones de variables numéricas&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.02</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/c820a4fd3d4b2a3ed7dbf0e7c09b8291e2c3712827643eefc9c22dd7ac078c13.png" src="_images/c820a4fd3d4b2a3ed7dbf0e7c09b8291e2c3712827643eefc9c22dd7ac078c13.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">numerica</span> <span class="ow">in</span> <span class="n">num</span><span class="p">:</span>
+  <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">numerica</span><span class="p">)</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Boxplot de </span><span class="si">{</span><span class="n">numerica</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/3d1b0ba0bfe093b423c63e387062765fbb6373c0b2abb15626fad1e2e397ad67.png" src="_images/3d1b0ba0bfe093b423c63e387062765fbb6373c0b2abb15626fad1e2e397ad67.png" />
+<img alt="_images/e9b6b22580b2e805e055b70fb1f049f791552445642ac3f417337705d06a0682.png" src="_images/e9b6b22580b2e805e055b70fb1f049f791552445642ac3f417337705d06a0682.png" />
+<img alt="_images/b9952f76cdf797b77911ee4c36c4c438a63d8774ca47b771f56fe8d3488575b0.png" src="_images/b9952f76cdf797b77911ee4c36c4c438a63d8774ca47b771f56fe8d3488575b0.png" />
+</div>
+</div>
+<p>En el caso de la variable año sus datos atipicos si se pueden considerar como casos reales ya que los autos han existido desde el inicio del siglo 20</p>
+<p>Revisaremos los valores atipicos de la variable price para tomar en cuenta en la parte de preprocesamiento</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Q1</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="n">Q3</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+<span class="n">IQR</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">-</span> <span class="n">Q1</span>
+<span class="n">lower_bound</span> <span class="o">=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">IQR</span>
+<span class="n">upper_bound</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">IQR</span>
+<span class="n">outliers_price</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">lower_bound</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">upper_bound</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cantidad de outliers en price:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">outliers_price</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Rango superior de atípicos: valores mayores a </span><span class="si">{</span><span class="n">upper_bound</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Ejemplo de outliers (los más bajos y más altos):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outliers_price</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>   
+<span class="nb">print</span><span class="p">(</span><span class="n">outliers_price</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>  
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cantidad de outliers en price: 8177
+Rango superior de atípicos: valores mayores a 57364.375
+
+Ejemplo de outliers (los más bajos y más altos):
+414596    57400
+336337    57400
+303716    57400
+364509    57427
+30699     57460
+Name: price, dtype: int64
+37410     3009548743
+91576     3024942282
+257840    3024942282
+356716    3736928711
+318592    3736928711
+Name: price, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Podemos observar que los outliers en la variable price son todos los valores mayores a 57 mil dolares, sin embargo este precio si es razonable a comparacion de los precios completamente irrealistas de algunas filas lo que lleva a que se distorsione el histograma</p>
+<p>Como son valores realmente irrealistas se deben realizar la filtracion para la variable price ya que pueden distorcionar el escalado y la regresion mas adelante. Esto se realizara durante el preprocesamiento de datos</p>
+<p>Revisamos los outliers de odometer</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Q1_o</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="n">Q3_o</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+<span class="n">IQR_o</span> <span class="o">=</span> <span class="n">Q3_o</span> <span class="o">-</span> <span class="n">Q1_o</span>
+<span class="n">lower_bound_o</span> <span class="o">=</span> <span class="n">Q1_o</span> <span class="o">-</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">IQR_o</span>
+<span class="n">upper_bound_o</span> <span class="o">=</span> <span class="n">Q3_o</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">IQR_o</span>
+<span class="n">outliers_odometer</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">lower_bound</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">upper_bound</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cantidad de outliers en odometer:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">outliers_odometer</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Rango superior de atípicos: valores mayores a </span><span class="si">{</span><span class="n">upper_bound</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Ejemplo de outliers (los más bajos y más altos):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outliers_odometer</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>   
+<span class="nb">print</span><span class="p">(</span><span class="n">outliers_price</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cantidad de outliers en odometer: 272897
+Rango superior de atípicos: valores mayores a 57364.375
+
+Ejemplo de outliers (los más bajos y más altos):
+310172    57366.0
+169986    57366.0
+385399    57366.0
+363379    57367.0
+363258    57367.0
+Name: odometer, dtype: float64
+159678   NaN
+159682   NaN
+159685   NaN
+159769   NaN
+290548   NaN
+Name: odometer, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Podemos observar que los valores atipicos de la variable odometer son valores mayores a 2277300 lo cual es un valor de odometer bastante alto y que los valores mas altos de outliers son atipicos y debemos imputarlos primero antes de poder tomar cualquier otra accion. Esto se realizara durante el preprocesamiento de datos</p>
+<p>Realizamos un scatterplot de latitud y longitud</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;long&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Longitud&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Latitud&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución espacial de puntos&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f375aff1f6c82c010113a84b2821ae37149e4df2d86994624f1edf27a2f919ec.png" src="_images/f375aff1f6c82c010113a84b2821ae37149e4df2d86994624f1edf27a2f919ec.png" />
+</div>
+</div>
+<p>Codificamos la variable posting date como fecha</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;posting_date&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;posting_date&#39;</span><span class="p">],</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">/%m/%Y&#39;</span><span class="p">,</span><span class="n">errors</span><span class="o">=</span><span class="s2">&quot;coerce&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Realizamos los graficos de variables categoricas</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">categoricas</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;region&quot;</span><span class="p">,</span><span class="s2">&quot;manufacturer&quot;</span><span class="p">,</span><span class="s2">&quot;condition&quot;</span><span class="p">,</span><span class="s2">&quot;cylinders&quot;</span><span class="p">,</span><span class="s2">&quot;fuel&quot;</span><span class="p">,</span><span class="s2">&quot;title_status&quot;</span><span class="p">,</span><span class="s2">&quot;transmission&quot;</span><span class="p">,</span><span class="s2">&quot;drive&quot;</span><span class="p">,</span><span class="s2">&quot;size&quot;</span><span class="p">,</span><span class="s2">&quot;type&quot;</span><span class="p">,</span><span class="s2">&quot;paint_color&quot;</span><span class="p">,</span><span class="s2">&quot;state&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">categoricas</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">col</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Distribución de </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>region
+columbus                   3608
+jacksonville               3562
+spokane / coeur d&#39;alene    2988
+eugene                     2985
+fresno / madera            2983
+                           ... 
+meridian                     28
+southwest MS                 14
+kansas city                  11
+fort smith, AR                9
+west virginia (old)           8
+Name: count, Length: 404, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/119088fab19e4f73fe3ac38836f9f61250ab2f7f8566bfde1d09a36c897dd61a.png" src="_images/119088fab19e4f73fe3ac38836f9f61250ab2f7f8566bfde1d09a36c897dd61a.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>manufacturer
+ford               70985
+chevrolet          55064
+toyota             34202
+honda              21269
+nissan             19067
+jeep               19014
+ram                18342
+gmc                16785
+bmw                14699
+dodge              13707
+mercedes-benz      11817
+hyundai            10338
+subaru              9495
+volkswagen          9345
+kia                 8457
+lexus               8200
+audi                7573
+cadillac            6953
+chrysler            6031
+acura               5978
+buick               5501
+mazda               5427
+infiniti            4802
+lincoln             4220
+volvo               3374
+mitsubishi          3292
+mini                2376
+pontiac             2288
+rover               2113
+jaguar              1946
+porsche             1384
+mercury             1184
+saturn              1090
+alfa-romeo           897
+tesla                868
+fiat                 792
+harley-davidson      153
+ferrari               95
+datsun                63
+aston-martin          24
+land rover            21
+morgan                 3
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/08c779c8774f294a1dde499b83aa6afa157d96426764d6a89f174b1d4d9cb8c3.png" src="_images/08c779c8774f294a1dde499b83aa6afa157d96426764d6a89f174b1d4d9cb8c3.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>condition
+good         121456
+excellent    101467
+like new      21178
+fair           6769
+new            1305
+salvage         601
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/f69b8d4b3d96178d5c68feca50bbf54d79847250d2dc9be603a08f4eeeac9b51.png" src="_images/f69b8d4b3d96178d5c68feca50bbf54d79847250d2dc9be603a08f4eeeac9b51.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>cylinders
+6 cylinders     94169
+4 cylinders     77642
+8 cylinders     72062
+5 cylinders      1712
+10 cylinders     1455
+other            1298
+3 cylinders       655
+12 cylinders      209
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/434056ebc3ea6403aaa3d6cae629413d10dcdec9ac909a5a3a373607838c56dd.png" src="_images/434056ebc3ea6403aaa3d6cae629413d10dcdec9ac909a5a3a373607838c56dd.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fuel
+gas         356209
+other        30728
+diesel       30062
+hybrid        5170
+electric      1698
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/4b941481c1773bf3a07f40c09b7d34bc1eb876ce64242b14c77e1960c28f7e7e.png" src="_images/4b941481c1773bf3a07f40c09b7d34bc1eb876ce64242b14c77e1960c28f7e7e.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>title_status
+clean         405117
+rebuilt         7219
+salvage         3868
+lien            1422
+missing          814
+parts only       198
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/7df5c5fa005821b51044cb5674aaff4cfdf02c9c20668be3928a2677af926087.png" src="_images/7df5c5fa005821b51044cb5674aaff4cfdf02c9c20668be3928a2677af926087.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>transmission
+automatic    336524
+other         62682
+manual        25118
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/55f437275d893d20b15b7ee6e2c7f91fbb5c5b3b0cb0677c0d1781dead719747.png" src="_images/55f437275d893d20b15b7ee6e2c7f91fbb5c5b3b0cb0677c0d1781dead719747.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>drive
+4wd    131904
+fwd    105517
+rwd     58892
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/f64112177233b1f293b853aee26bd58ca88e5786ce8aa513af53d87aab29963f.png" src="_images/f64112177233b1f293b853aee26bd58ca88e5786ce8aa513af53d87aab29963f.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>size
+full-size      63465
+mid-size       34476
+compact        19384
+sub-compact     3194
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/c0658baad36b8cc5300b9ad60ec6e7117979105c7cc206e2695048b185078cde.png" src="_images/c0658baad36b8cc5300b9ad60ec6e7117979105c7cc206e2695048b185078cde.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>type
+sedan          87056
+SUV            77284
+pickup         43510
+truck          35279
+other          22110
+coupe          19204
+hatchback      16598
+wagon          10751
+van             8548
+convertible     7731
+mini-van        4825
+offroad          609
+bus              517
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/9139b20a74ffa0203b2ab34181d91dabf3adcc3be8af2fe6464e51da58144746.png" src="_images/9139b20a74ffa0203b2ab34181d91dabf3adcc3be8af2fe6464e51da58144746.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>paint_color
+white     79285
+black     62861
+silver    42970
+blue      31223
+red       30473
+grey      24416
+green      7343
+custom     6700
+brown      6593
+yellow     2142
+orange     1984
+purple      687
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/09bb676efd3c766da9124e4d40b6bb701f53c8593ac68ca76d980391f7914490.png" src="_images/09bb676efd3c766da9124e4d40b6bb701f53c8593ac68ca76d980391f7914490.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>state
+ca    50614
+fl    28511
+tx    22945
+ny    19386
+oh    17696
+or    17104
+mi    16900
+nc    15277
+wa    13861
+pa    13753
+wi    11398
+co    11088
+tn    11066
+va    10732
+il    10387
+nj     9742
+id     8961
+az     8679
+ia     8632
+ma     8174
+mn     7716
+ga     7003
+ok     6792
+sc     6327
+mt     6294
+ks     6209
+in     5704
+ct     5188
+al     4955
+md     4778
+nm     4425
+mo     4293
+ky     4149
+ar     4038
+ak     3474
+la     3196
+nv     3194
+nh     2981
+dc     2970
+me     2966
+hi     2964
+vt     2513
+ri     2320
+sd     1302
+ut     1150
+wv     1052
+ne     1036
+ms     1016
+de      949
+wy      610
+nd      410
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/851f5081e11d66f866a11f077990167a5b733b9fb3d5b1f4678642f0b06b9fa4.png" src="_images/851f5081e11d66f866a11f077990167a5b733b9fb3d5b1f4678642f0b06b9fa4.png" />
+</div>
+</div>
+<p>En estos graficos se pueden observar las categorias de cada una de las variables y cuales son las que mas resaltan</p>
+<p>Realizamos la matriz de correlacion de las variables numericas</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">matriz</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">num</span><span class="p">]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">matriz</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Matriz de correlación de variables numéricas&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f14bc4d588cf051263aaf7b7020f81bebc2715867ce9a076c54a09ab99a3de4d.png" src="_images/f14bc4d588cf051263aaf7b7020f81bebc2715867ce9a076c54a09ab99a3de4d.png" />
+</div>
+</div>
+<p>Se pueden observar que las correlaciones de las variables numericas es bastante baja. Lo cual es raro para las variables que deberian estar relacionadas. se realizara la matriz de correlacion despues del preprocesamiento.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="preprocesamiento">
+<h1>Preprocesamiento<a class="headerlink" href="#preprocesamiento" title="Link to this heading">#</a></h1>
+<p>En primer lugar se eliminan las variables que no son predictorias o importantes para el modelo</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drop</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;url&quot;</span><span class="p">,</span><span class="s2">&quot;region_url&quot;</span><span class="p">,</span><span class="s2">&quot;VIN&quot;</span><span class="p">,</span><span class="s2">&quot;image_url&quot;</span><span class="p">,</span><span class="s2">&quot;description&quot;</span><span class="p">,</span><span class="s2">&quot;size&quot;</span><span class="p">,</span><span class="s2">&quot;posting_date&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">drop</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="tratamiento-de-outliers">
+<h2>Tratamiento de outliers<a class="headerlink" href="#tratamiento-de-outliers" title="Link to this heading">#</a></h2>
+<p>Ahora se trataran los outliers de la variable price y la variable odometer.
+El tratamiento de price es clave para poder crear la variable HighDemand</p>
+<p>Primero se revisan cuantos valores de 0 hay en las 2 variables</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">zeros_count</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">Zeros</span><span class="o">=</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Cantidad de registros con odometer = 0: </span><span class="si">{</span><span class="n">zeros_count</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Cantidad de registros con price = 0: </span><span class="si">{</span><span class="n">Zeros</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cantidad de registros con odometer = 0: 1965
+Cantidad de registros con price = 0: 32895
+</pre></div>
+</div>
+</div>
+</div>
+<p>Volvemos los 0 de las variables como NA para imputarlos despues</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NaN en odometer:&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NaN en price:&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NaN en odometer: 6365
+NaN en price: 32895
+</pre></div>
+</div>
+</div>
+</div>
+<p>Utilizamos el metodo de percentiles para filtrar los outliers de ambas variables</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p_low_price</span><span class="p">,</span> <span class="n">p_high_price</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">([</span><span class="mf">0.005</span><span class="p">,</span> <span class="mf">0.995</span><span class="p">])</span>
+<span class="n">p_low_odo</span><span class="p">,</span> <span class="n">p_high_odo</span>     <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">([</span><span class="mf">0.005</span><span class="p">,</span> <span class="mf">0.995</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Umbral price:&quot;</span><span class="p">,</span> <span class="n">p_low_price</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">p_high_price</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Umbral odometer:&quot;</span><span class="p">,</span> <span class="n">p_low_odo</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">p_high_odo</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Umbral price: 3.0 - 78900.0
+Umbral odometer: 1.0 - 351147.4899999976
+</pre></div>
+</div>
+</div>
+</div>
+<p>Si bien los umbrales nos muestran los outliers reducidos, se utilizaran valores mas realistas de precio y odometer para eliminar valores irreales de datos usados</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">min_price_business</span> <span class="o">=</span> <span class="mi">500</span>  
+<span class="n">low_price</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">p_low_price</span><span class="p">,</span> <span class="n">min_price_business</span><span class="p">)</span>
+<span class="n">high_price</span> <span class="o">=</span> <span class="n">p_high_price</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">min_odometer_business</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">max_odometer_business</span> <span class="o">=</span> <span class="mi">500000</span>
+<span class="n">low_odo</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">p_low_odo</span><span class="p">,</span> <span class="n">min_odometer_business</span><span class="p">)</span>
+<span class="n">high_odo</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">p_high_odo</span><span class="p">,</span> <span class="n">max_odometer_business</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Umbral final price: </span><span class="si">{</span><span class="n">low_price</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">high_price</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Umbral final odometer: </span><span class="si">{</span><span class="n">low_odo</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">high_odo</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Umbral final price: 500 - 78900.0
+Umbral final odometer: 100 - 351147.4899999976
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se filtran los outliers de las variables</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_clean</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span>
+    <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span> <span class="o">|</span> <span class="p">((</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">low_price</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">high_price</span><span class="p">)))</span> <span class="o">&amp;</span>
+    <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span> <span class="o">|</span> <span class="p">((</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">low_odo</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;odometer&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">high_odo</span><span class="p">)))</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Realizamos los histogramas y boxplots de las variables numericas nuevamente para revisar el cambio</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_clean</span><span class="p">[</span><span class="n">num</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Distribuciones de variables numéricas&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.02</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/febf852569dc6f4ec9109150779ded2cd5ea308d0bb976ab92aa5164fce014e5.png" src="_images/febf852569dc6f4ec9109150779ded2cd5ea308d0bb976ab92aa5164fce014e5.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">numerica</span> <span class="ow">in</span> <span class="n">num</span><span class="p">:</span>
+  <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_clean</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">numerica</span><span class="p">)</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Boxplot de </span><span class="si">{</span><span class="n">numerica</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/9b28cf4fb46521ff91ec66ba639c9fc572b13494060d6c8ad8479867154c3392.png" src="_images/9b28cf4fb46521ff91ec66ba639c9fc572b13494060d6c8ad8479867154c3392.png" />
+<img alt="_images/5c29210d2976aa2101cc7ae534f151a4be64990ee449b146228d62d7b49d91c5.png" src="_images/5c29210d2976aa2101cc7ae534f151a4be64990ee449b146228d62d7b49d91c5.png" />
+<img alt="_images/48255942e9a68b5865bcab78dd5fd144d3195c949f568b78f0ef706362f11e69.png" src="_images/48255942e9a68b5865bcab78dd5fd144d3195c949f568b78f0ef706362f11e69.png" />
+</div>
+</div>
+<p>Podemos observar que los valores son mas razonables en las variables numericas. y si son valores reales de precios de autos usados</p>
+<p>Realizamos nuevamente la matriz de correlacion</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">matriz_out</span><span class="o">=</span><span class="n">df_clean</span><span class="p">[</span><span class="n">num</span><span class="p">]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">matriz_out</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Matriz de correlación de variables numéricas&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/9b2894f3c3394f392eb6f25990566acafd212531291f5b9fb6e0afd44f5eb8c5.png" src="_images/9b2894f3c3394f392eb6f25990566acafd212531291f5b9fb6e0afd44f5eb8c5.png" />
+</div>
+</div>
+<p>Podemos observar que gracias a la filtracion de los datos atipicos ahora existe una correlacion positiva entre el precio y el año</p>
+<p>Gracias a esto ya se puede realizar el split de los datos para crear la variable objetivo de clasificacion</p>
+</section>
+<section id="split-de-los-datos">
+<h2>Split de los datos<a class="headerlink" href="#split-de-los-datos" title="Link to this heading">#</a></h2>
+<section id="clasificacion">
+<h3>Clasificacion<a class="headerlink" href="#clasificacion" title="Link to this heading">#</a></h3>
+<p>Creamos la variable objetivo HighDemand</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_class</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_class</span><span class="p">[</span><span class="s1">&#39;HighDemand&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">df_class</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">df_class</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">())</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_clas</span><span class="o">=</span><span class="n">df_class</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">,</span><span class="s1">&#39;HighDemand&#39;</span><span class="p">])</span>
+<span class="n">Y_clas</span><span class="o">=</span><span class="n">df_class</span><span class="p">[</span><span class="s1">&#39;HighDemand&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_clas</span><span class="p">,</span> <span class="n">X_test_clas</span><span class="p">,</span> <span class="n">y_train_clas</span><span class="p">,</span> <span class="n">y_test_clas</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_clas</span><span class="p">,</span> <span class="n">Y_clas</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">stratify</span><span class="o">=</span><span class="n">Y_clas</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="regresion">
+<h3>Regresion<a class="headerlink" href="#regresion" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_reg</span><span class="o">=</span><span class="n">df_clean</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_reg</span><span class="o">=</span><span class="n">df_reg</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;price&#39;</span><span class="p">)</span>
+<span class="n">Y_reg</span><span class="o">=</span><span class="n">df_reg</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_reg</span><span class="p">,</span> <span class="n">X_test_reg</span><span class="p">,</span> <span class="n">y_train_reg</span><span class="p">,</span> <span class="n">y_test_reg</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_reg</span><span class="p">,</span> <span class="n">Y_reg</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="imputacion-de-datos-faltantes-na">
+<h2>Imputacion de datos faltantes(NA)<a class="headerlink" href="#imputacion-de-datos-faltantes-na" title="Link to this heading">#</a></h2>
+<p>Se realiza la imputacion de datos faltantes antes de realizar OneHot y escalamiento</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_imput</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;year&quot;</span><span class="p">,</span><span class="s2">&quot;odometer&quot;</span><span class="p">]</span>
+<span class="n">cat_imput</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;manufacturer&quot;</span><span class="p">,</span><span class="s2">&quot;model&quot;</span><span class="p">,</span><span class="s2">&quot;condition&quot;</span><span class="p">,</span><span class="s2">&quot;cylinders&quot;</span><span class="p">,</span><span class="s2">&quot;fuel&quot;</span><span class="p">,</span><span class="s2">&quot;title_status&quot;</span><span class="p">,</span><span class="s2">&quot;transmission&quot;</span><span class="p">,</span><span class="s2">&quot;drive&quot;</span><span class="p">,</span><span class="s2">&quot;type&quot;</span><span class="p">,</span><span class="s2">&quot;paint_color&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se imputan las variables lat y long utilizando la mediana por state, debido a que no entran en ninguna otra categoria</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_clas</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_train_clas</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;state&quot;</span><span class="p">)[</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">median</span><span class="p">()))</span>
+<span class="n">X_train_clas</span><span class="p">[</span><span class="s2">&quot;long&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_train_clas</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;state&quot;</span><span class="p">)[</span><span class="s2">&quot;long&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">median</span><span class="p">()))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lat_medians_clas</span> <span class="o">=</span> <span class="n">X_train_clas</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;state&quot;</span><span class="p">)[</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="n">long_medians_clas</span> <span class="o">=</span> <span class="n">X_train_clas</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;state&quot;</span><span class="p">)[</span><span class="s2">&quot;long&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_test_clas</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_test_clas</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span>
+    <span class="n">X_test_clas</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">lat_medians_clas</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">X_test_clas</span><span class="p">[</span><span class="s2">&quot;long&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_test_clas</span><span class="p">[</span><span class="s2">&quot;long&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span>
+    <span class="n">X_test_clas</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">long_medians_clas</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_reg</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_train_reg</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;state&quot;</span><span class="p">)[</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">median</span><span class="p">()))</span>
+<span class="n">X_train_reg</span><span class="p">[</span><span class="s2">&quot;long&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_train_reg</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;state&quot;</span><span class="p">)[</span><span class="s2">&quot;long&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">median</span><span class="p">()))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lat_medians_reg</span> <span class="o">=</span> <span class="n">X_train_reg</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;state&quot;</span><span class="p">)[</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="n">long_medians_reg</span> <span class="o">=</span> <span class="n">X_train_reg</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;state&quot;</span><span class="p">)[</span><span class="s2">&quot;long&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_test_reg</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_test_reg</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span>
+    <span class="n">X_test_reg</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">lat_medians_reg</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">X_test_reg</span><span class="p">[</span><span class="s2">&quot;long&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_test_reg</span><span class="p">[</span><span class="s2">&quot;long&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span>
+    <span class="n">X_test_reg</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">long_medians_reg</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se imputa por la mediana a las variables numericas</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imputer_num_clas</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;median&quot;</span><span class="p">)</span>
+<span class="n">X_train_clas_num</span> <span class="o">=</span> <span class="n">imputer_num_clas</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_clas</span><span class="p">[</span><span class="n">num_imput</span><span class="p">])</span>
+<span class="n">X_test_clas_num</span>  <span class="o">=</span> <span class="n">imputer_num_clas</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_clas</span><span class="p">[</span><span class="n">num_imput</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imputer_num_reg</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;median&quot;</span><span class="p">)</span>
+<span class="n">X_train_reg_num</span> <span class="o">=</span> <span class="n">imputer_num_reg</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_reg</span><span class="p">[</span><span class="n">num_imput</span><span class="p">])</span>
+<span class="n">X_test_reg_num</span>  <span class="o">=</span> <span class="n">imputer_num_reg</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_reg</span><span class="p">[</span><span class="n">num_imput</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Imputamos por la moda las variables categoricas</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imputer_cat_clas</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;most_frequent&quot;</span><span class="p">)</span>
+<span class="n">X_train_cat_clas</span> <span class="o">=</span> <span class="n">imputer_cat_clas</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_clas</span><span class="p">[</span><span class="n">cat_imput</span><span class="p">])</span>
+<span class="n">X_test_cat_clas</span>  <span class="o">=</span> <span class="n">imputer_cat_clas</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_clas</span><span class="p">[</span><span class="n">cat_imput</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imputer_cat_reg</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;most_frequent&quot;</span><span class="p">)</span>
+<span class="n">X_train_cat_reg</span> <span class="o">=</span> <span class="n">imputer_cat_reg</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_reg</span><span class="p">[</span><span class="n">cat_imput</span><span class="p">])</span>
+<span class="n">X_test_cat_reg</span>  <span class="o">=</span> <span class="n">imputer_cat_reg</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_reg</span><span class="p">[</span><span class="n">cat_imput</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="codificacion-de-categoricas">
+<h2>Codificacion de categoricas<a class="headerlink" href="#codificacion-de-categoricas" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">encoder_clas</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">handle_unknown</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span><span class="n">sparse_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">encoder_reg</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">handle_unknown</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span><span class="n">sparse_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_cat_clas</span><span class="o">=</span><span class="n">encoder_clas</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_cat_clas</span><span class="p">)</span>
+<span class="n">X_test_cat_clas</span><span class="o">=</span><span class="n">encoder_clas</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_cat_clas</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_cat_reg</span><span class="o">=</span><span class="n">encoder_reg</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_cat_reg</span><span class="p">)</span>
+<span class="n">X_test_cat_reg</span><span class="o">=</span><span class="n">encoder_reg</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_cat_reg</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="estandarizacion-de-variables-numericas">
+<h2>Estandarizacion de variables numericas<a class="headerlink" href="#estandarizacion-de-variables-numericas" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scaler_clas</span><span class="o">=</span><span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">scaler_reg</span><span class="o">=</span><span class="n">StandardScaler</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_clas_num</span><span class="o">=</span><span class="n">scaler_clas</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_clas_num</span><span class="p">)</span>
+<span class="n">X_test_clas_num</span><span class="o">=</span><span class="n">scaler_clas</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_clas_num</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_reg_num</span><span class="o">=</span><span class="n">scaler_reg</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_reg_num</span><span class="p">)</span>
+<span class="n">X_test_reg_num</span><span class="o">=</span><span class="n">scaler_reg</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_reg_num</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se concatena con los categoricos codificados</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_clas_num</span><span class="o">=</span><span class="n">csr_matrix</span><span class="p">(</span><span class="n">X_train_clas_num</span><span class="p">)</span>
+<span class="n">X_test_clas_num</span><span class="o">=</span><span class="n">csr_matrix</span><span class="p">(</span><span class="n">X_test_clas_num</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_clas_final</span> <span class="o">=</span> <span class="n">hstack</span><span class="p">([</span><span class="n">X_train_clas_num</span><span class="p">,</span> <span class="n">X_train_cat_clas</span><span class="p">])</span>
+<span class="n">X_test_clas_final</span>  <span class="o">=</span> <span class="n">hstack</span><span class="p">([</span><span class="n">X_test_clas_num</span><span class="p">,</span> <span class="n">X_test_cat_clas</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_reg_num</span><span class="o">=</span><span class="n">csr_matrix</span><span class="p">(</span><span class="n">X_train_reg_num</span><span class="p">)</span>
+<span class="n">X_test_reg_num</span><span class="o">=</span><span class="n">csr_matrix</span><span class="p">(</span><span class="n">X_test_reg_num</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train_reg_final</span> <span class="o">=</span> <span class="n">hstack</span><span class="p">([</span><span class="n">X_train_reg_num</span><span class="p">,</span> <span class="n">X_train_cat_reg</span><span class="p">])</span>
+<span class="n">X_test_reg_final</span>  <span class="o">=</span> <span class="n">hstack</span><span class="p">([</span><span class="n">X_test_reg_num</span><span class="p">,</span> <span class="n">X_test_cat_reg</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Introduccion.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduccion</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Librerias</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cargado-de-datos">Cargado de datos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones">Funciones</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio-de-los-datos">Analisis exploratorio de los datos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-na-eda">Analisis de NA(EDA)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficas-variables-numericas-y-filtracion-de-outliers">Graficas variables numericas y filtracion de outliers</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocesamiento">Preprocesamiento</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-outliers">Tratamiento de outliers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#split-de-los-datos">Split de los datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion">Clasificacion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regresion">Regresion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes-na">Imputacion de datos faltantes(NA)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codificacion-de-categoricas">Codificacion de categoricas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estandarizacion-de-variables-numericas">Estandarizacion de variables numericas</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Mateo Gomez, Miguel Jaimes, Mateo Molinares
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
